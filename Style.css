@@ -325,7 +325,7 @@ a:visited {
   background-color: white;
   box-shadow: 0px 0px 12px 3px #d2d2d2;
   border-radius: 20px;
-  width: 320px;
+  min-width: 350px;
   margin-bottom: 45px;
   cursor: pointer;
 }
@@ -407,7 +407,7 @@ a:visited {
     flex-wrap: wrap;
   }
   .activities-cards {
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -456,5 +456,22 @@ a:visited {
   }
   .btn-submit-icon {
     display: inherit;
+  }
+  #activities {
+    margin: 50px 10px 0 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #popular-accommodation {
+    padding: 15px;
+  }
+  #accommodation-result {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .activity-card {
+    min-width: 300px;
   }
 }
