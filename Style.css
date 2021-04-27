@@ -375,6 +375,21 @@ a:visited {
 
 /* @media */
 
+@media screen and (max-width: 1495px) {
+  .small-cards.last-card {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .small-cards.last-card {
+    flex-direction: column;
+    width: inherit;
+    justify-content: inherit;
+  }
+}
+
 @media screen and (max-width: 1210px) {
   #result {
     flex-direction: column-reverse;
