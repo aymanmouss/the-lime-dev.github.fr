@@ -424,6 +424,9 @@ a:visited {
     justify-content: space-around;
   }
 }
+@media screen and (max-width: 770px) {
+.filter-tag:nth-child(4) { margin-top: 10px; }
+}
 
 @media screen and (max-width: 760px) {
   .container {
