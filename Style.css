@@ -500,6 +500,9 @@ a:visited {
   #activities {
     margin: 50px 0px 0 0px;
   }
+  #activities h2 {
+    margin-left: 15px;
+  }
   .about-menu-links,
   .our-accommodations {
     margin-right: 30px;
@@ -514,6 +517,9 @@ a:visited {
   }
   #activities {
     padding: 50px;
+  }
+  #activities h2 {
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 550px) {
