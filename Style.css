@@ -353,11 +353,11 @@ a:visited {
 }
 .footer-nav {
   display: flex;
-  flex-direction: row;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  box-sizing: border-box;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin-left: 50px;
 }
 .about-menu,
 .our-accommodations,
@@ -372,18 +372,28 @@ a:visited {
   list-style: none;
   padding-left: 0;
 }
+.about-menu-links,
+.our-accommodations {
+  margin-right: 250px;
+}
 
 /* @media */
 
-@media screen and (max-width: 1495px) {
-  .small-cards.last-card {
+@media screen and (max-width: 1440px) {
+  .small-cards:nth-child(4) {
+    /* display: none; */
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
+  }
+  .small-cards:nth-child(2) {
+    margin-left: 7px;
+    margin-right: 7px;
   }
 }
-@media screen and (max-width: 1110px) {
-  .small-cards.last-card {
+
+@media screen and (max-width: 1093px) {
+  .small-cards:nth-child(4) {
     flex-direction: column;
     width: inherit;
     justify-content: inherit;
@@ -409,6 +419,13 @@ a:visited {
   .popular-accommodation-card {
     width: 100%;
   }
+  .about-menu-links,
+  .our-accommodations {
+    margin-right: 0;
+  }
+  .footer-nav {
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 920px) {
   #result {
@@ -423,9 +440,15 @@ a:visited {
   .activities-cards {
     justify-content: space-around;
   }
+  .small-cards:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 859px) {
-.filter-tag:nth-child(4) { margin-top: 10px; }
+  .filter-tag:nth-child(4) {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -465,9 +488,9 @@ a:visited {
   .accommodation-card {
     width: 100%;
   }
-  .footer-nav {
+  /* .footer-nav {
     justify-content: flex-start;
-  }
+  } */
   .btn-submit-text {
     display: none;
   }
@@ -475,10 +498,24 @@ a:visited {
     display: inherit;
   }
   #activities {
-    margin: 50px 10px 0 10px;
+    margin: 50px 0px 0 0px;
+  }
+  .about-menu-links,
+  .our-accommodations {
+    margin-right: 30px;
   }
 }
-
+@media screen and (max-width: 720px) {
+  .activity-card {
+    min-width: 100%;
+  }
+  .small-cards {
+    min-width: 100%;
+  }
+  #activities {
+    padding: 50px;
+  }
+}
 @media screen and (max-width: 550px) {
   #popular-accommodation {
     padding: 15px;
@@ -486,9 +523,13 @@ a:visited {
   #accommodation-result {
     padding: 15px;
   }
+  #activities {
+    padding: 15px;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 370px) {
-  .activity-card {
+  /* .activity-card {
     min-width: 300px;
-  }
+  } */
 }
